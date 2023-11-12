@@ -1,39 +1,68 @@
-.main-title {
-    border: 4px solid green;
+:root {
+    --color-primary-dark: #31261A;
+    --color-primary-light: #FAF4EA;
+    --color-brand-light: #819B57;
+    --color-brand-dark: #465929;
 }
 
-#traditions-section {
-    border: 4px solid red;
+/*Base*/
+body {
+    color: var(--color-primary-dark);
+
 }
 
-/* .button{
-    border: 4px solid green;
+ul {
+    list-style-type: none;
 }
 
-.button[disabled] {
-    border: 4px solid red;
-} */
-
-.chefs-section>h2 {
-    color: blue;
-}
-
+/*Button*/
 .button {
-    color: #FAF4EA;
-    background-color: #819B57;
-    border: 2px solid #819B57;
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-light);
+    border: 2px solid var(--color-brand-light);
     border-radius: 8px;
     cursor: pointer;
 }
-.button:hover{
-    color: #465929;
+
+.button:hover {
+    color: var(--color-brand-dark);
     background-color: transparent;
 }
 
-.button:focus{
+/* .button:focus{
     background-color: violet;
+} */
+
+/* .button:active {
+    background-color: red;
+} */
+
+
+/*Link*/
+.link {
+    color: var(--color-primary-light);
 }
 
-.button:active {
-    background-color: red;
+.link:hover {
+    color: var(--color-brand-light);
+}
+
+/*Hero-section*/
+.hero-title {
+    color: var(--color-primary-light);
+}
+
+.hero-title .accent {
+    color: var(--color-brand-light);
+}
+
+/*Advantages section*/
+.advantages-list {
+
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-light);
+}
+
+.section-title .accent{
+    color: var(--color-brand-dark);
 }
